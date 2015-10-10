@@ -3,5 +3,6 @@
 import re
 
 text=open('text').read()
-find=''.join(re.findall('[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]',text))
+pattern = re.compile('[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]',re.MULTILINE)
+find=''.join(pattern.findall(text))
 print(find)
