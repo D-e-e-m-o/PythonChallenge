@@ -1,6 +1,6 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3.5
 
-import Image
+from PIL import Image
 
 img = Image.open('oxygen.png')
 #any row will be OK
